@@ -14,11 +14,11 @@ This project demonstrates a simple Node.js-based producer-consumer application u
 │   ├── package.json
 │   └── src
 │       └── consumer.js
-└── producer
-    ├── Dockerfile
-    ├── package.json
-    └── src
-        └── producer.js
+├── producer
+│   ├── Dockerfile
+│   ├── package.json
+│   └── src
+│       └── producer.js
 └── docker-compose.yml
 ```
 
