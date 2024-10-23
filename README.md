@@ -1,6 +1,6 @@
 # Kafka Node.js Producer-Consumer Pipeline
 
-This project demonstrates a simple Node.js-based producer-consumer application using Apache Kafka for message brokering. The producer sends a `Message [<Current timestamp>] ` message to Kafka every 5 seconds, and the consumer reads and logs those messages. The application runs in Docker containers using Docker Compose for easy setup and orchestration.
+This project demonstrates a simple Node.js-based producer-consumer application using Apache Kafka for message brokering. The producer sends a `Message [<Current timestamp>]` message to Kafka every 5 seconds, and the consumer reads and logs those messages. The application runs in Docker containers using Docker Compose for easy setup and orchestration.
 
 ![kafka-pipeline-arhitecture](images/kafka-arch.drawio.png)
 
