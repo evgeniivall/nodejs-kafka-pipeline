@@ -41,3 +41,12 @@ services:
       - KAFKA_TOPIC=test-topic
       - KAFKA_GROUP_ID=test-group
     stop_grace_period: 30s # Allows up to 30 seconds for a graceful shutdown
+
+  kowl:
+    image: quay.io/cloudhut/kowl:master
+    depends_on:
+      - kafka
+    ports:
+      - "8080:8080" # Kowl will be accessible on localhost:8080
+    environment:
+      KAFKA_BROKERS: "kafka:9092" # Connects to the Kafka broker
